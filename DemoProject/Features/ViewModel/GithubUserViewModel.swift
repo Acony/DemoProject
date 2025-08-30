@@ -12,8 +12,8 @@ class GithubUserViewModel: ObservableObject {
     @MainActor @Published var users: [GitHubUser] = []
     
     private static let perPage = 20
-    private var lastUserId: Int = 0
-    private var isLoading = false
+    private(set) var lastUserId: Int = 0
+    private(set) var isLoading = false
 
     private let gitHubUserCase: GitHubUserUseCase
     
