@@ -1,6 +1,10 @@
-import XCTest
-import SwiftUI
+//
 //  UserDetailViewTests.swift
+//  DemoProjectTests
+//
+//  Created by Thanh Quang on 31/5/25.
+//
+
 import Testing
 import SwiftUI
 @testable import DemoProject
