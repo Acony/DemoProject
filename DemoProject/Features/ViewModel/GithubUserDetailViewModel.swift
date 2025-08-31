@@ -1,6 +1,6 @@
 //
 //  GithubUserDetailViewModel.swift
-//  test1
+//  DemoProject
 //
 //  Created by Thanh Quang on 28/5/25.
 //
