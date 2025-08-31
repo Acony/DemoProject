@@ -17,10 +17,13 @@ class GithubUserDataProvider: GitHubUserUseCase {
     func fetchCachedAndNetworkData(from userId: Int, limit: Int) -> AsyncStream<[GitHubUser]> {
         return AsyncStream { continuation in
             Task {
+                
+                // Get from DB
                 if let localUsers = await getUsersFromDB(from: userId, limit: limit) {
                     continuation.yield(localUsers)
                 }
                 
+                // Get from network
                 do {
                     let userEndpoint = UserEndpoint(page: limit, since: userId)
                     let users: [GitHubUser] = try await networkManager.fetch(from: userEndpoint)
