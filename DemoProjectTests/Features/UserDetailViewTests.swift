@@ -1,6 +1,8 @@
 import XCTest
 import SwiftUI
+//  UserDetailViewTests.swift
 import Testing
+import SwiftUI
 @testable import DemoProject
 
 final class UserDetailViewTests: XCTestCase {
