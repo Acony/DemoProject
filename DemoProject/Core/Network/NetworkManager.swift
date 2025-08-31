@@ -1,11 +1,8 @@
-////
-////  Untitled.swift
-////  test1
-////
-////  Created by Thanh Quang on 4/4/25.
-////
 //
-//import Foundation
+//  NetworkManager.swift
+//  DemoProject
+//
+//  Created by Thanh Quang on 4/4/25.
 //
 
 import Foundation
